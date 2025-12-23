@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Amazon.in</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <svg width="50" height="32" viewBox="0 0 50 32">
+                        <path d="M8.5 8C2.6 8 0 10.8 0 16c0 5.1 2.6 8 8.5 8 3.5 0 5.8-1.2 7.5-3.5v3.3c0 2.5-1.3 4.2-4.2 4.2-2.3 0-3.5-1.3-3.8-2.8h-4c.4 4.3 4.1 7 8.2 7 5.1 0 8.5-3.1 8.5-8.8v-11C27.7 10.8 25.1 8 19.2 8c-4.8 0-8.2 2.5-8.2 7.3 0 3.8 2.3 6.2 5.9 6.2 2.8 0 5.1-1.3 6.2-3.5-1.2 3.3-4.1 5.5-8.2 5.5-4.1 0-7.4-2.2-8.4-5.7h-4c1 5.1 4.7 9 12.4 9 7 0 12.4-4.3 12.4-11.3v-11.1z" fill="white"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="checkout-header-info">
+                Checkout
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="checkout-page">
+        <div class="checkout-container">
+            <!-- Left Section - Form -->
+            <div class="checkout-form-section">
+                <!-- Step Indicator -->
+                <div class="steps-indicator">
+                    <div class="step active">
+                        <span class="step-number">1</span>
+                        <span class="step-label">Shipping Address</span>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">2</span>
+                        <span class="step-label">Shipping Method</span>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">3</span>
+                        <span class="step-label">Payment</span>
+                    </div>
+                </div>
+
+                <!-- Shipping Address Form -->
+                <div class="form-section active">
+                    <h2>Shipping Address</h2>
+                    <form id="shippingForm">
+                        <div class="form-group">
+                            <label>Full Name *</label>
+                            <input type="text" placeholder="John Doe" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Email Address *</label>
+                            <input type="email" placeholder="john@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Phone Number *</label>
+                            <input type="tel" placeholder="+91 9876543210" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Street Address *</label>
+                            <input type="text" placeholder="123 Main Street" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>City *</label>
+                                <input type="text" placeholder="Mumbai" required>
+                            </div>
+                            <div class="form-group">
+                                <label>State *</label>
+                                <input type="text" placeholder="Maharashtra" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Postal Code *</label>
+                                <input type="text" placeholder="400001" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Country *</label>
+                                <input type="text" placeholder="India" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="setDefault">
+                            <label for="setDefault">Set as default address</label>
+                        </div>
+
+                        <button type="button" class="next-btn" onclick="nextStep()">Continue</button>
+                    </form>
+                </div>
+
+                <!-- Shipping Method Form -->
+                <div class="form-section">
+                    <h2>Shipping Method</h2>
+                    <div class="shipping-options">
+                        <label class="shipping-option active">
+                            <input type="radio" name="shipping" value="standard" checked>
+                            <div class="option-content">
+                                <span class="option-title">Standard Delivery</span>
+                                <span class="option-desc">Delivery in 5-7 days</span>
+                                <span class="option-price">FREE</span>
+                            </div>
+                        </label>
+
+                        <label class="shipping-option">
+                            <input type="radio" name="shipping" value="express">
+                            <div class="option-content">
+                                <span class="option-title">Express Delivery</span>
+                                <span class="option-desc">Delivery in 2-3 days</span>
+                                <span class="option-price">₹99</span>
+                            </div>
+                        </label>
+
+                        <label class="shipping-option">
+                            <input type="radio" name="shipping" value="overnight">
+                            <div class="option-content">
+                                <span class="option-title">Overnight Delivery</span>
+                                <span class="option-desc">Delivery next day</span>
+                                <span class="option-price">₹299</span>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="button-group">
+                        <button type="button" class="back-btn" onclick="prevStep()">Back</button>
+                        <button type="button" class="next-btn" onclick="nextStep()">Continue</button>
+                    </div>
+                </div>
+
+                <!-- Payment Form -->
+                <div class="form-section">
+                    <h2>Payment Method</h2>
+                    
+                    <div class="payment-options">
+                        <label class="payment-option active">
+                            <input type="radio" name="payment" value="card" checked>
+                            <div class="option-content">
+                                <i class="fas fa-credit-card"></i>
+                                <span>Credit/Debit Card</span>
+                            </div>
+                        </label>
+
+                        <label class="payment-option">
+                            <input type="radio" name="payment" value="upi">
+                            <div class="option-content">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>UPI</span>
+                            </div>
+                        </label>
+
+                        <label class="payment-option">
+                            <input type="radio" name="payment" value="netbanking">
+                            <div class="option-content">
+                                <i class="fas fa-bank"></i>
+                                <span>Net Banking</span>
+                            </div>
+                        </label>
+
+                        <label class="payment-option">
+                            <input type="radio" name="payment" value="wallet">
+                            <div class="option-content">
+                                <i class="fas fa-wallet"></i>
+                                <span>Amazon Pay</span>
+                            </div>
+                        </label>
+                    </div>
+
+                    <!-- Card Details Form -->
+                    <div class="card-form" id="cardForm">
+                        <h3>Card Details</h3>
+                        <div class="form-group">
+                            <label>Cardholder Name *</label>
+                            <input type="text" placeholder="John Doe" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Card Number *</label>
+                            <input type="text" placeholder="1234 5678 9012 3456" maxlength="19" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Expiry Date *</label>
+                                <input type="text" placeholder="MM/YY" maxlength="5" required>
+                            </div>
+                            <div class="form-group">
+                                <label>CVV *</label>
+                                <input type="text" placeholder="123" maxlength="4" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="button-group">
+                        <button type="button" class="back-btn" onclick="prevStep()">Back</button>
+                        <button type="button" class="place-order-btn" onclick="placeOrder()">Place Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Section - Order Summary -->
+            <div class="order-summary-section">
+                <div class="summary-box">
+                    <h3>Order Summary</h3>
+                    
+                    <div class="summary-items">
+                        <div class="summary-item-row">
+                            <span>Subtotal</span>
+                            <span>₹7,096</span>
+                        </div>
+                        <div class="summary-item-row">
+                            <span>Shipping</span>
+                            <span id="shippingCost">FREE</span>
+                        </div>
+                        <div class="summary-item-row">
+                            <span>Tax</span>
+                            <span>₹1,277</span>
+                        </div>
+                    </div>
+
+                    <div class="summary-total">
+                        <span>Total</span>
+                        <span id="totalAmount">₹8,373</span>
+                    </div>
+
+                    <div class="items-list">
+                        <h4>Items</h4>
+                        <div class="item-summary">
+                            <img src="https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY218_.jpg" alt="Product">
+                            <div>
+                                <p class="item-name">Wireless Headphones</p>
+                                <p class="item-qty">Qty: 1</p>
+                            </div>
+                            <p class="item-price">₹2,499</p>
+                        </div>
+
+                        <div class="item-summary">
+                            <img src="https://m.media-amazon.com/images/I/61WeYu1Z7nL._AC_UY218_.jpg" alt="Product">
+                            <div>
+                                <p class="item-name">Smart Watch</p>
+                                <p class="item-qty">Qty: 1</p>
+                            </div>
+                            <p class="item-price">₹3,999</p>
+                        </div>
+
+                        <div class="item-summary">
+                            <img src="https://m.media-amazon.com/images/I/71r7-X2vN1L._AC_UY218_.jpg" alt="Product">
+                            <div>
+                                <p class="item-name">USB-C Cable</p>
+                                <p class="item-qty">Qty: 2</p>
+                            </div>
+                            <p class="item-price">₹598</p>
+                        </div>
+                    </div>
+
+
+                    <div class="trust-badges">
+                        <div class="badge">
+                            <i class="fas fa-lock"></i>
+                            <span>Secure Checkout</span>
+                        </div>
+                        <div class="badge">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>100% Purchase Protection</span>
+                        </div>
+                        <div class="badge">
+                            <i class="fas fa-redo"></i>
+                            <span>Easy Returns</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Get to Know Us</h4>
+                <a href="#">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Press Releases</a>
+                <a href="#">Amazon Science</a>
+            </div>
+            <div class="footer-section">
+                <h4>Connect with Us</h4>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+            <div class="footer-section">
+                <h4>Make Money with Us</h4>
+                <a href="#">Sell on Amazon</a>
+                <a href="#">Sell under Amazon Accelerator</a>
+                <a href="#">Amazon Global Selling</a>
+                <a href="#">Become an Affiliate</a>
+            </div>
+            <div class="footer-section">
+                <h4>Let Us Help You</h4>
+                <a href="#">Your Account</a>
+                <a href="#">Returns Centre</a>
+                <a href="#">100% Purchase Protection</a>
+                <a href="#">Amazon Prime</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <a href="#" class="back-to-top">Back to Top</a>
+            <div class="footer-info">
+                <p>&copy; 1996-2024 Amazon.com, Inc. or its affiliates</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="checkout.js"></script>
+</body>
+</html>

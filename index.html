@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon.in - Online Shopping with Great Deals and Discounts</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Amazon Logo -->
+            <div class="nav-logo">
+                <a href="#">
+                    <svg width="50" height="32" viewBox="0 0 50 32">
+                        <path d="M8.5 8C2.6 8 0 10.8 0 16c0 5.1 2.6 8 8.5 8 3.5 0 5.8-1.2 7.5-3.5v3.3c0 2.5-1.3 4.2-4.2 4.2-2.3 0-3.5-1.3-3.8-2.8h-4c.4 4.3 4.1 7 8.2 7 5.1 0 8.5-3.1 8.5-8.8v-11C27.7 10.8 25.1 8 19.2 8c-4.8 0-8.2 2.5-8.2 7.3 0 3.8 2.3 6.2 5.9 6.2 2.8 0 5.1-1.3 6.2-3.5-1.2 3.3-4.1 5.5-8.2 5.5-4.1 0-7.4-2.2-8.4-5.7h-4c1 5.1 4.7 9 12.4 9 7 0 12.4-4.3 12.4-11.3v-11.1z" fill="white"/>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Location -->
+            <div class="nav-location">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                    <span class="small">Delivering to</span>
+                    <span class="location">India</span>
+                </div>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="nav-search">
+                <select class="search-select">
+                    <option>All Categories</option>
+                    <option>Alexa Skills</option>
+                    <option>Amazon Devices</option>
+                    <option>Amazon Global</option>
+                    <option>Beauty</option>
+                    <option>Books</option>
+                </select>
+                <input type="text" placeholder="Search Amazon.in">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+            <!-- Language & Account -->
+            <div class="nav-language">
+                <i class="fas fa-globe"></i>
+                <span>EN</span>
+            </div>
+
+            <!-- Account -->
+            <div class="nav-account">
+                <span class="small">Hello, Sign in</span>
+                <span class="account">Account & Lists</span>
+            </div>
+
+            <!-- Returns -->
+            <div class="nav-returns">
+                <span class="small">Returns</span>
+                <span class="returns">& Orders</span>
+            </div>
+
+            <!-- Cart -->
+            <div class="nav-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+                <span>Cart</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Secondary Navigation -->
+    <div class="secondary-nav">
+        <div class="nav-container">
+            <button class="menu-btn">
+                <i class="fas fa-bars"></i> All
+            </button>
+            <a href="#">Best Sellers</a>
+            <a href="#">Today's Deals</a>
+            <a href="#">Customer Service</a>
+            <a href="#">Gift Cards</a>
+            <a href="#">Electronics</a>
+            <a href="#">Fashion</a>
+            <a href="#">Home & Kitchen</a>
+        </div>
+    </div>
+
+    <!-- Hero Banner -->
+    <div class="hero-banner">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1500' height='600'%3E%3Crect fill='%23FF9900' width='1500' height='600'/%3E%3Ctext x='750' y='300' font-size='48' fill='white' text-anchor='middle' dominant-baseline='middle' font-weight='bold'%3EAmazon Deals%3C/text%3E%3Ctext x='750' y='400' font-size='32' fill='white' text-anchor='middle' dominant-baseline='middle'%3EUp to 70%25 OFF%3C/text%3E%3C/svg%3E" alt="Hero Banner" style="width:100%; height:auto; display:block;">
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Carousel Section -->
+        <section class="carousel-section">
+            <h2 class="section-title">Your Recently Viewed Items</h2>
+            <div class="carousel-container">
+                <button class="carousel-btn prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="carousel-items">
+                    <div class="carousel-item">
+                        <img src="https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY218_.jpg" alt="Wireless Headphones">
+                        <p>Wireless Headphones</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://m.media-amazon.com/images/I/61WeYu1Z7nL._AC_UY218_.jpg" alt="Smart Watch">
+                        <p>Smart Watch</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://m.media-amazon.com/images/I/71r7-X2vN1L._AC_UY218_.jpg" alt="USB-C Cable">
+                        <p>USB-C Cable</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://m.media-amazon.com/images/I/51L2UL-nYkL._AC_UY218_.jpg" alt="Portable Speaker">
+                        <p>Portable Speaker</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://m.media-amazon.com/images/I/71Yqz7DM-IL._AC_UY218_.jpg" alt="Phone Case & Screen Protector">
+                        <p>Phone Accessories</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://m.media-amazon.com/images/I/61YyGsKuXnL._AC_UY218_.jpg" alt="Webcam HD 1080p">
+                        <p>Webcam HD 1080p</p>
+                    </div>
+                </div>
+                <button class="carousel-btn next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <!-- Category Cards -->
+        <section class="category-section">
+            <div class="category-card">
+                <h3>Electronics</h3>
+                <img src="https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY218_.jpg" alt="Electronics">
+                <a href="#">Shop Now</a>
+            </div>
+            <div class="category-card">
+                <h3>Mobiles & Accessories</h3>
+                <img src="https://m.media-amazon.com/images/I/71Yqz7DM-IL._AC_UY218_.jpg" alt="Mobiles & Accessories">
+                <a href="#">Shop Now</a>
+            </div>
+            <div class="category-card">
+                <h3>Home & Kitchen</h3>
+                <img src="https://m.media-amazon.com/images/I/51L2UL-nYkL._AC_UY218_.jpg" alt="Home & Kitchen">
+                <a href="#">Shop Now</a>
+            </div>
+            <div class="category-card">
+                <h3>Computer Accessories</h3>
+                <img src="https://m.media-amazon.com/images/I/61YyGsKuXnL._AC_UY218_.jpg" alt="Computer Accessories">
+                <a href="#">Shop Now</a>
+            </div>
+        </section>
+
+        <!-- Products Grid -->
+        <section class="products-section">
+            <h2 class="section-title">Recommended For You</h2>
+            <div class="products-grid">
+                <!-- Product Card 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY218_.jpg" alt="Wireless Headphones">
+                        <span class="discount-badge">-40%</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-name">Wireless Headphones</p>
+                        <div class="rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="reviews">(1,245)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">₹2,499</span>
+                            <span class="original-price">₹4,199</span>
+                        </div>
+                        <p class="delivery">Free Delivery by Amazon</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/61WeYu1Z7nL._AC_UY218_.jpg" alt="Smart Watch">
+                        <span class="discount-badge">-35%</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-name">Smart Watch</p>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="reviews">(2,341)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">₹3,999</span>
+                            <span class="original-price">₹6,199</span>
+                        </div>
+                        <p class="delivery">Free Delivery by Amazon</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/71r7-X2vN1L._AC_UY218_.jpg" alt="USB-C Charging Cable">
+                        <span class="discount-badge">-25%</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-name">USB-C Charging Cable</p>
+                        <div class="rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="reviews">(856)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">₹299</span>
+                            <span class="original-price">₹399</span>
+                        </div>
+                        <p class="delivery">Free Delivery by Amazon</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/51L2UL-nYkL._AC_UY218_.jpg" alt="Portable Speaker">
+                        <span class="discount-badge">-20%</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-name">Portable Speaker</p>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="reviews">(1,567)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">₹1,799</span>
+                            <span class="original-price">₹2,299</span>
+                        </div>
+                        <p class="delivery">Free Delivery by Amazon</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 5 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/71Yqz7DM-IL._AC_UY218_.jpg" alt="Phone Case & Screen Protector">
+                        <span class="discount-badge">-30%</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-name">Phone Case & Screen Protector</p>
+                        <div class="rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="reviews">(2,134)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">₹399</span>
+                            <span class="original-price">₹599</span>
+                        </div>
+                        <p class="delivery">Free Delivery by Amazon</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/61YyGsKuXnL._AC_UY218_.jpg" alt="Webcam HD 1080p">
+                        <span class="discount-badge">-45%</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-name">Webcam HD 1080p</p>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="reviews">(945)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">₹1,299</span>
+                            <span class="original-price">₹2,399</span>
+                        </div>
+                        <p class="delivery">Free Delivery by Amazon</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 7 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY218_.jpg" alt="Over-Ear Headphones">
+                        <span class="discount-badge">-50%</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-name">Over-Ear Headphones</p>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="reviews">(3,421)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">₹2,499</span>
+                            <span class="original-price">₹4,999</span>
+                        </div>
+                        <p class="delivery">Free Delivery by Amazon</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 8 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/61WeYu1Z7nL._AC_UY218_.jpg" alt="Fitness Smart Watch">
+                        <span class="discount-badge">-15%</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-name">Fitness Smart Watch</p>
+                        <div class="rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="reviews">(1,876)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">₹5,999</span>
+                            <span class="original-price">₹7,099</span>
+                        </div>
+                        <p class="delivery">Free Delivery by Amazon</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Banner 2 -->
+        <section class="banner-section">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1500' height='300'%3E%3Crect fill='%234A90E2' width='1500' height='300'/%3E%3Ctext x='750' y='120' font-size='42' fill='white' text-anchor='middle' dominant-baseline='middle' font-weight='bold'%3ESpecial Offers%3C/text%3E%3Ctext x='750' y='200' font-size='28' fill='white' text-anchor='middle' dominant-baseline='middle'%3EExclusive Deals on Best Sellers%3C/text%3E%3C/svg%3E" alt="Promotional Banner">
+        </section>
+
+        <!-- Today's Deals Section -->
+        <section class="deals-section">
+            <h2 class="section-title">Today's Deals</h2>
+            <div class="carousel-container">
+                <button class="carousel-btn prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="carousel-items">
+                    <div class="deal-card">
+                        <span class="deal-badge">LIMITED TIME</span>
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Crect fill='%23FF6B6B' width='150' height='150'/%3E%3Ctext x='75' y='60' font-size='32' fill='white' text-anchor='middle' dominant-baseline='middle' font-weight='bold'%3E70%25%3C/text%3E%3Ctext x='75' y='100' font-size='14' fill='white' text-anchor='middle' dominant-baseline='middle'%3EOF%3C/text%3E%3C/svg%3E" alt="Deal">
+                        <p class="deal-name">Up to 70% off</p>
+                    </div>
+                    <div class="deal-card">
+                        <span class="deal-badge">LIMITED TIME</span>
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Crect fill='%23FF9900' width='150' height='150'/%3E%3Ctext x='75' y='60' font-size='32' fill='white' text-anchor='middle' dominant-baseline='middle' font-weight='bold'%3E60%25%3C/text%3E%3Ctext x='75' y='100' font-size='14' fill='white' text-anchor='middle' dominant-baseline='middle'%3EOF%3C/text%3E%3C/svg%3E" alt="Deal">
+                        <p class="deal-name">Up to 60% off</p>
+                    </div>
+                    <div class="deal-card">
+                        <span class="deal-badge">LIMITED TIME</span>
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Crect fill='%237ED321' width='150' height='150'/%3E%3Ctext x='75' y='60' font-size='32' fill='white' text-anchor='middle' dominant-baseline='middle' font-weight='bold'%3E50%25%3C/text%3E%3Ctext x='75' y='100' font-size='14' fill='white' text-anchor='middle' dominant-baseline='middle'%3EOF%3C/text%3E%3C/svg%3E" alt="Deal">
+                        <p class="deal-name">Up to 50% off</p>
+                    </div>
+                    <div class="deal-card">
+                        <span class="deal-badge">LIMITED TIME</span>
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Crect fill='%2350E3C2' width='150' height='150'/%3E%3Ctext x='75' y='60' font-size='32' fill='white' text-anchor='middle' dominant-baseline='middle' font-weight='bold'%3E55%25%3C/text%3E%3Ctext x='75' y='100' font-size='14' fill='white' text-anchor='middle' dominant-baseline='middle'%3EOF%3C/text%3E%3C/svg%3E" alt="Deal">
+                        <p class="deal-name">Up to 55% off</p>
+                    </div>
+                </div>
+                <button class="carousel-btn next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Get to Know Us</h4>
+                <a href="#">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Press Releases</a>
+                <a href="#">Amazon Science</a>
+            </div>
+            <div class="footer-section">
+                <h4>Connect with Us</h4>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+            <div class="footer-section">
+                <h4>Make Money with Us</h4>
+                <a href="#">Sell on Amazon</a>
+                <a href="#">Sell under Amazon Accelerator</a>
+                <a href="#">Amazon Global Selling</a>
+                <a href="#">Become an Affiliate</a>
+            </div>
+            <div class="footer-section">
+                <h4>Let Us Help You</h4>
+                <a href="#">Your Account</a>
+                <a href="#">Returns Centre</a>
+                <a href="#">100% Purchase Protection</a>
+                <a href="#">Amazon Prime</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <a href="#" class="back-to-top">Back to Top</a>
+            <div class="footer-info">
+                <p>&copy; 1996-2024 Amazon.com, Inc. or its affiliates</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

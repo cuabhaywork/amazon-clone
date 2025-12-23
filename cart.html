@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Amazon.in</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <svg width="50" height="32" viewBox="0 0 50 32">
+                        <path d="M8.5 8C2.6 8 0 10.8 0 16c0 5.1 2.6 8 8.5 8 3.5 0 5.8-1.2 7.5-3.5v3.3c0 2.5-1.3 4.2-4.2 4.2-2.3 0-3.5-1.3-3.8-2.8h-4c.4 4.3 4.1 7 8.2 7 5.1 0 8.5-3.1 8.5-8.8v-11C27.7 10.8 25.1 8 19.2 8c-4.8 0-8.2 2.5-8.2 7.3 0 3.8 2.3 6.2 5.9 6.2 2.8 0 5.1-1.3 6.2-3.5-1.2 3.3-4.1 5.5-8.2 5.5-4.1 0-7.4-2.2-8.4-5.7h-4c1 5.1 4.7 9 12.4 9 7 0 12.4-4.3 12.4-11.3v-11.1z" fill="white"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="nav-search">
+                <select class="search-select">
+                    <option>All Categories</option>
+                </select>
+                <input type="text" placeholder="Search Amazon.in">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+            <div class="nav-account">
+                <span class="small">Hello, Sign in</span>
+                <span class="account">Account & Lists</span>
+            </div>
+
+            <div class="nav-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+                <span>Cart</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="cart-page">
+        <div class="cart-container">
+            <!-- Left Section - Cart Items -->
+            <div class="cart-items-section">
+                <h1>Shopping Cart</h1>
+                
+                <div class="cart-items-list">
+                    <!-- Cart Item 1 -->
+                    <div class="cart-item">
+                        <div class="item-image">
+                            <img src="https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY218_.jpg" alt="Product">
+                        </div>
+                        <div class="item-details">
+                            <h3>Wireless Headphones</h3>
+                            <p class="seller">Sold by Amazon</p>
+                            <p class="delivery-status"><i class="fas fa-check-circle"></i> In Stock</p>
+                            <p class="delivery-info">Free delivery by Dec 24</p>
+                        </div>
+                        <div class="item-quantity">
+                            <label>Qty:</label>
+                            <div class="qty-selector">
+                                <button class="qty-btn">−</button>
+                                <input type="number" value="1" min="1">
+                                <button class="qty-btn">+</button>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            <span class="price">₹2,499</span>
+                            <span class="original">₹4,199</span>
+                        </div>
+                        <button class="remove-btn" title="Remove from cart">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+
+                    <!-- Cart Item 2 -->
+                    <div class="cart-item">
+                        <div class="item-image">
+                            <img src="https://m.media-amazon.com/images/I/61WeYu1Z7nL._AC_UY218_.jpg" alt="Product">
+                        </div>
+                        <div class="item-details">
+                            <h3>Smart Watch</h3>
+                            <p class="seller">Sold by Amazon</p>
+                            <p class="delivery-status"><i class="fas fa-check-circle"></i> In Stock</p>
+                            <p class="delivery-info">Free delivery by Dec 25</p>
+                        </div>
+                        <div class="item-quantity">
+                            <label>Qty:</label>
+                            <div class="qty-selector">
+                                <button class="qty-btn">−</button>
+                                <input type="number" value="1" min="1">
+                                <button class="qty-btn">+</button>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            <span class="price">₹3,999</span>
+                            <span class="original">₹6,199</span>
+                        </div>
+                        <button class="remove-btn" title="Remove from cart">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+
+                    <!-- Cart Item 3 -->
+                    <div class="cart-item">
+                        <div class="item-image">
+                            <img src="https://m.media-amazon.com/images/I/71r7-X2vN1L._AC_UY218_.jpg" alt="Product">
+                        </div>
+                        <div class="item-details">
+                            <h3>USB-C Charging Cable</h3>
+                            <p class="seller">Sold by Amazon</p>
+                            <p class="delivery-status"><i class="fas fa-check-circle"></i> In Stock</p>
+                            <p class="delivery-info">Free delivery by Dec 23</p>
+                        </div>
+                        <div class="item-quantity">
+                            <label>Qty:</label>
+                            <div class="qty-selector">
+                                <button class="qty-btn">−</button>
+                                <input type="number" value="2" min="1">
+                                <button class="qty-btn">+</button>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            <span class="price">₹598</span>
+                            <span class="original">₹798</span>
+                        </div>
+                        <button class="remove-btn" title="Remove from cart">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="empty-cart-message" style="display: none;">
+                    <i class="fas fa-shopping-cart"></i>
+                    <p>Your cart is empty</p>
+                    <a href="index.html" class="continue-shopping-btn">Continue Shopping</a>
+                </div>
+
+                <div class="continue-shopping-link">
+                    <a href="index.html">← Continue Shopping</a>
+                </div>
+            </div>
+
+            <!-- Right Section - Price Summary -->
+            <div class="cart-summary">
+                <div class="summary-box">
+                    <h3>Order Summary</h3>
+                    
+                    <div class="summary-item">
+                        <span>Subtotal:</span>
+                        <span id="subtotal">₹7,096</span>
+                    </div>
+
+                    <div class="summary-item">
+                        <span>Shipping & Handling:</span>
+                        <span class="free">FREE</span>
+                    </div>
+
+                    <div class="summary-item">
+                        <span>Promotion Codes:</span>
+                        <span id="promoDiscount">₹0</span>
+                    </div>
+
+                    <div class="promo-input">
+                        <input type="text" placeholder="Enter promotion code" id="promoCode">
+                        <button id="applyPromo">Apply</button>
+                    </div>
+
+                    <div class="summary-item tax">
+                        <span>Estimated Tax:</span>
+                        <span id="tax">₹1,277</span>
+                    </div>
+
+                    <div class="summary-total">
+                        <span>Total:</span>
+                        <span id="total">₹8,373</span>
+                    </div>
+
+                    <button class="checkout-btn">Proceed to Checkout</button>
+                    <button class="save-for-later-btn">Save for Later</button>
+                </div>
+
+                <div class="offers-section">
+                    <h4>Offers & Deals</h4>
+                    <div class="offer-item">
+                        <i class="fas fa-gift"></i>
+                        <p>Get ₹500 off on orders above ₹5000</p>
+                    </div>
+                    <div class="offer-item">
+                        <i class="fas fa-percent"></i>
+                        <p>Extra 10% off with Amazon Pay</p>
+                    </div>
+                </div>
+
+                <div class="security-section">
+                    <i class="fas fa-shield-alt"></i>
+                    <p>100% Purchase Protection</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Related Products Section -->
+        <section class="related-products-section">
+            <h2>Frequently Bought Together</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/51L2UL-nYkL._AC_UY218_.jpg" alt="Product">
+                        <span class="discount-badge">-20%</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-name">Portable Speaker</p>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="reviews">(1,567)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">₹1,799</span>
+                            <span class="original-price">₹2,299</span>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/71Yqz7DM-IL._AC_UY218_.jpg" alt="Product">
+                        <span class="discount-badge">-30%</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-name">Phone Case & Screen Protector</p>
+                        <div class="rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="reviews">(2,134)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">₹399</span>
+                            <span class="original-price">₹599</span>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/61YyGsKuXnL._AC_UY218_.jpg" alt="Product">
+                        <span class="discount-badge">-45%</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-name">Webcam HD 1080p</p>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="reviews">(945)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">₹1,299</span>
+                            <span class="original-price">₹2,399</span>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY218_.jpg" alt="Product">
+                        <span class="discount-badge">-50%</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-name">Mechanical Keyboard RGB</p>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="reviews">(3,421)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">₹2,499</span>
+                            <span class="original-price">₹4,999</span>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Get to Know Us</h4>
+                <a href="#">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Press Releases</a>
+                <a href="#">Amazon Science</a>
+            </div>
+            <div class="footer-section">
+                <h4>Connect with Us</h4>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+            <div class="footer-section">
+                <h4>Make Money with Us</h4>
+                <a href="#">Sell on Amazon</a>
+                <a href="#">Sell under Amazon Accelerator</a>
+                <a href="#">Amazon Global Selling</a>
+                <a href="#">Become an Affiliate</a>
+            </div>
+            <div class="footer-section">
+                <h4>Let Us Help You</h4>
+                <a href="#">Your Account</a>
+                <a href="#">Returns Centre</a>
+                <a href="#">100% Purchase Protection</a>
+                <a href="#">Amazon Prime</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <a href="#" class="back-to-top">Back to Top</a>
+            <div class="footer-info">
+                <p>&copy; 1996-2024 Amazon.com, Inc. or its affiliates</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>
